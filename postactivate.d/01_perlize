@@ -1,0 +1,7 @@
+# This snippet must be sourced, not run.
+
+PERLENV=$VIRTUAL_ENV
+eval $(perl -I${PERLENV}/lib/perl5 -Mlocal::lib=${PERLENV})
+PERL_MM_USE_DEFAULT=1
+export PERLENV PERL5LIB MODULEBUILDRC PERL_MM_OPT PERL_MB_OPT PERL_MM_USE_DEFAULT=1
+

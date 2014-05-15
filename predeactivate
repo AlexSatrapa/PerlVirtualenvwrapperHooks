@@ -1,0 +1,7 @@
+#!/bin/bash
+# This hook is run before every virtualenv is deactivated.
+
+for snippet in $VIRTUALENVWRAPPER_HOOK_DIR/predeactivate.d/[0-9][0-9]*[^~] ; do
+   source $snippet
+done
+

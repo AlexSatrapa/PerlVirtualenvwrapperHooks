@@ -1,0 +1,12 @@
+#!/bin/bash
+# This hook is run after a new virtualenv is created and before it is activated.
+
+export VIRTUAL_ENV=$WORKON_HOME/$1
+echo "WORKON_HOME: $WORKON_HOME"
+echo "VIRTUAL_ENV: $VIRTUAL_ENV ($1)"
+
+for script in $VIRTUALENVWRAPPER_HOOK_DIR/premkvirtualenv.d/[0-9][0-9]*[^~] ; do
+	$script
+done
+
+unset VIRTUAL_ENV

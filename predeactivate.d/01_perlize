@@ -1,0 +1,8 @@
+# This file must be sourced not run.
+
+unset PERLENV
+unset PERL5LIB
+unset MODULEBUILDRC
+unset PERL_MM_OPT
+unset PERL_MB_OPT
+
