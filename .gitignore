@@ -17,7 +17,6 @@ apache/httpd.pid
 Build
 _build
 blib
-LICENSE
 MANIFEST
 MYMETA.*
 META.*
